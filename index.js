@@ -52,16 +52,14 @@ document.addEventListener("DOMContentLoaded", function() {
   const prevBtn = document.getElementById("prevBtn");
   const nextBtn = document.getElementById("nextBtn");
   const carImage = document.getElementById("carImage");
-  const images = ["./img/DACIA DUSTER LDV.png", 
-  "./img/DACIA LODGY LDV(1).png", 
-  "./img/DACIA STEPWAY 1 LDV.png", 
-  "./img/DACIA LOGAN LDV.png",
-  "./img/DACIA STEPWAY 2 LDV.png",
-  "./img/PEUGEOT 308 LDV.png",
-  "./img/PEUGEOT CLIO LDV.png",
-  "./img/RENAULT CLIO W LDV.png",
-  "./img/RENAULT CLIOO LDV.png",
-  "./img/RENAULT CONGO LDV.png"
+  const images = [
+  "./img/LDV DACIA DUSTER.png",
+  "./img/LDV DACIA LODGY.png",
+  "./img/LDV DACIA LOGAN.png",
+  "./img/LDV DACIA STEPWAY.png",
+  "./img/LDV FIAT TIPO.png",
+  "./img/LDV PGT 308GT.png",
+  "./img/LDV RENAULT CLIO.png", 
   
   ]; // Add your image URLs
 

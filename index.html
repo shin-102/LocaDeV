@@ -8,11 +8,11 @@
   <script src="https://cdn.tailwindcss.com"></script>
 </head>
 <body>
-  <nav class="relative z-[2] bg-neutral-950 p-4 text-white ">
-    <div class="container mx-auto flex justify-center">
-      <span class="text-2xl font-semibold">Locadev</span>
-    </div>
-  </nav>
+  <header class="relative z-[2] bg-neutral-950 p-4 text-white ">
+    <span class="container mx-auto flex justify-center">
+      <h2 class="text-2xl font-semibold">Locadev</h2>
+    </span>
+  </header>
 
   <nav id="navigator" class="relative z-[1] bg-gradsecond p-2">
     <div class="container mx-auto flex justify-center text-xl font-semibold gap-12 py-2 text-gray-800">
@@ -30,15 +30,13 @@
     <h1 class="text-5xl text-accent font-semibold">Welcome to our Car Rental Service</h1>
     <div class="absolute left-4 w-24">
       <!--Whatsapp logo-->
-      <svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" version="1.1" viewBox="0 0 256 256" xml:space="preserve">
-
-        <defs>
-        </defs>
-        <g style="stroke: none; stroke-width: 0; stroke-dasharray: none; stroke-linecap: butt; stroke-linejoin: miter; stroke-miterlimit: 10; fill: none; fill-rule: nonzero; opacity: 1;" transform="translate(1.4065934065934016 1.4065934065934016) scale(2.81 2.81)" >
-          <path d="M 45 0 C 20.147 0 0 20.147 0 45 c 0 24.853 20.147 45 45 45 s 45 -20.147 45 -45 C 90 20.147 69.853 0 45 0 z M 45.454 68.712 c -4.304 0 -8.347 -1.1 -11.865 -3.031 L 20 70 l 4.431 -13.068 c -2.235 -3.67 -3.522 -7.974 -3.522 -12.576 C 20.908 30.904 31.898 20 45.454 20 C 59.013 20 70 30.904 70 44.356 S 59.012 68.712 45.454 68.712 z" style="stroke: none; stroke-width: 1; stroke-dasharray: none; stroke-linecap: butt; stroke-linejoin: miter; stroke-miterlimit: 10; fill: rgb(255,255,255); fill-rule: nonzero; opacity: 1;" transform=" matrix(1 0 0 1 0 0) " stroke-linecap="round" />
-          <path d="M 45.454 23.879 c -11.38 0 -20.637 9.186 -20.637 20.477 c 0 4.481 1.461 8.63 3.931 12.006 l -2.578 7.605 l 7.931 -2.521 c 3.258 2.139 7.162 3.387 11.354 3.387 c 11.378 0 20.637 -9.185 20.637 -20.476 C 66.092 33.066 56.834 23.879 45.454 23.879 z M 57.499 52.805 c -0.503 1.393 -2.96 2.738 -4.062 2.837 c -1.103 0.1 -1.103 0.897 -7.221 -1.492 c -6.117 -2.391 -9.977 -8.615 -10.278 -9.013 c -0.302 -0.398 -2.457 -3.236 -2.457 -6.174 c 0 -2.937 1.554 -4.382 2.105 -4.979 c 0.552 -0.597 1.204 -0.747 1.605 -0.747 s 0.803 0.05 1.153 0.05 c 0.352 0 0.852 -0.199 1.353 0.996 c 0.501 1.196 1.706 4.133 1.856 4.432 c 0.151 0.299 0.252 0.648 0.05 1.046 c -0.199 0.399 -0.299 0.647 -0.601 0.996 c -0.301 0.348 -0.632 0.778 -0.903 1.046 c -0.301 0.297 -0.614 0.62 -0.264 1.217 c 0.351 0.598 1.559 2.552 3.347 4.134 c 2.298 2.033 4.237 2.664 4.838 2.963 c 0.602 0.299 0.953 0.249 1.304 -0.151 c 0.352 -0.398 1.505 -1.742 1.906 -2.34 c 0.401 -0.597 0.803 -0.497 1.354 -0.298 c 0.55 0.198 3.509 1.643 4.111 1.942 c 0.601 0.298 1.002 0.448 1.153 0.697 C 57.999 50.214 57.999 51.409 57.499 52.805 z" style="stroke: none; stroke-width: 1; stroke-dasharray: none; stroke-linecap: butt; stroke-linejoin: miter; stroke-miterlimit: 10; fill: rgb(255, 255, 255); fill-rule: nonzero; opacity: 1;" transform=" matrix(1 0 0 1 0 0) " stroke-linecap="round" />
+      <svg class="text-white" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" version="1.1" viewBox="0 0 256 256" xml:space="preserve">
+        <defs></defs>
+        <g style="stroke: none; stroke-width: 0; stroke-dasharray: none; stroke-linecap: butt; stroke-linejoin: miter; stroke-miterlimit: 10; fill: currentColor; fill-rule: nonzero; opacity: 1;" transform="translate(1.4065934065934016 1.4065934065934016) scale(2.81 2.81)">
+          <path d="M 45 0 C 20.147 0 0 20.147 0 45 c 0 24.853 20.147 45 45 45 s 45 -20.147 45 -45 C 90 20.147 69.853 0 45 0 z M 45.454 68.712 c -4.304 0 -8.347 -1.1 -11.865 -3.031 L 20 70 l 4.431 -13.068 c -2.235 -3.67 -3.522 -7.974 -3.522 -12.576 C 20.908 30.904 31.898 20 45.454 20 C 59.013 20 70 30.904 70 44.356 S 59.012 68.712 45.454 68.712 z" style="stroke: none; stroke-width: 1; stroke-dasharray: none; stroke-linecap: butt; stroke-linejoin: miter; stroke-miterlimit: 10; fill-rule: nonzero; opacity: 1;"transform="matrix(1 0 0 1 0 0)" stroke-linecap="round"/>
+          <path d="M 45.454 23.879 c -11.38 0 -20.637 9.186 -20.637 20.477 c 0 4.481 1.461 8.63 3.931 12.006 l -2.578 7.605 l 7.931 -2.521 c 3.258 2.139 7.162 3.387 11.354 3.387 c 11.378 0 20.637 -9.185 20.637 -20.476 C 66.092 33.066 56.834 23.879 45.454 23.879 z M 57.499 52.805 c -0.503 1.393 -2.96 2.738 -4.062 2.837 c -1.103 0.1 -1.103 0.897 -7.221 -1.492 c -6.117 -2.391 -9.977 -8.615 -10.278 -9.013 c -0.302 -0.398 -2.457 -3.236 -2.457 -6.174 c 0 -2.937 1.554 -4.382 2.105 -4.979 c 0.552 -0.597 1.204 -0.747 1.605 -0.747 s 0.803 0.05 1.153 0.05 c 0.352 0 0.852 -0.199 1.353 0.996 c 0.501 1.196 1.706 4.133 1.856 4.432 c 0.151 0.299 0.252 0.648 0.05 1.046 c -0.199 0.399 -0.299 0.647 -0.601 0.996 c -0.301 0.348 -0.632 0.778 -0.903 1.046 c -0.301 0.297 -0.614 0.62 -0.264 1.217 c 0.351 0.598 1.559 2.552 3.347 4.134 c 2.298 2.033 4.237 2.664 4.838 2.963 c 0.602 0.299 0.953 0.249 1.304 -0.151 c 0.352 -0.398 1.505 -1.742 1.906 -2.34 c 0.401 -0.597 0.803 -0.497 1.354 -0.298 c 0.55 0.198 3.509 1.643 4.111 1.942 c 0.601 0.298 1.002 0.448 1.153 0.697 C 57.999 50.214 57.999 51.409 57.499 52.805 z" style="stroke: none; stroke-width: 1; stroke-dasharray: none; stroke-linecap: butt; stroke-linejoin: miter; stroke-miterlimit: 10; fill-rule: nonzero; opacity: 1;" transform="matrix(1 0 0 1 0 0)" stroke-linecap="round"/>
         </g>
-      </svg>
+      </svg>  
     </div>
   </section>
   
@@ -87,42 +85,6 @@
   
   <!--* CONTACT SECTION *-->
 
-  <!-- <section id="contact" class="hidden bg-neutral-900 h-screen flex flex-col items-center">
-    <div class="p-6 bg-gradprime rounded-lg mt-8">
-      <h2 class="text-3xl font-semibold mb-4 text-accent">Contact Us</h2>
-      <form class="w-full max-w-lg">
-        <div class="flex flex-wrap -mx-3 mb-4">
-          <div class="w-full md:w-1/2 px-3 mb-6 md:mb-0">
-            <label class="block uppercase tracking-wide text-accent text-xs font-bold mb-2" for="name">
-              Name
-            </label>
-            <input class="appearance-none block w-full bg-gray-100 text-gray-700 border rounded py-3 px-4 mb-3 leading-tight focus:outline-none focus:bg-white" id="name" type="text" placeholder="John Doe">
-          </div>
-          <div class="w-full md:w-1/2 px-3">
-            <div class="flex items-center">
-              <span id="emailToggle" class="block uppercase tracking-wide text-accent text-xs font-bold mb-2 cursor-pointer mr-2">Email</span>
-              <span id="phoneToggle" class="block uppercase tracking-wide inactive text-xs font-bold mb-2 cursor-pointer mr-2">Phone Number</span>
-            </div>
-          
-            <input type="text" id="contactField" placeholder="Enter your Email" class="appearance-none block w-full bg-gray-100 text-gray-700 border rounded py-3 px-4 leading-tight focus:outline-none focus:bg-white focus:border-gray-500">
-          </div>
-        </div>
-        <div class="w-full mb-4">
-          <label class="block uppercase tracking-wide text-accent text-xs font-bold mb-2" for="message">
-            Message
-          </label>
-          <textarea class="appearance-none block w-full bg-gray-100 text-gray-700 border rounded py-3 px-4 mb-3 leading-tight focus:outline-none focus:bg-white focus:border-gray-500" id="message" rows="6" placeholder="Your message here"></textarea>
-        </div>
-        <button class=" hover:bg-yellow-600 text-accent font-bold py-2 px-4 rounded focus:outline-none focus:shadow-outline" type="button">
-          Send
-        </button>
-      </form>
-    </div>
-    <div class="mt-10">
-      <iframe height="300px" src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d13042.659318897353!2d-6.1497054!3d35.1899055!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0xd0bc92a648f302f%3A0x1a67e4752ee08f7d!2sLocadev%20Rent%20Car!5e0!3m2!1sen!2sma!4v1693313172521!5m2!1sen!2sma" frameborder="0"></iframe>
-    </div> 
-  </section> -->
-  <!-- component -->
   <section id="contact" class="hidden bg-neutral-900 h-screen flex flex-col items-center">
     <div class="absolute inset-y-14 inset-x-0 bg-gray-300" style="top: 200px">
       <iframe width="100%" height="100%" frameborder="0" marginheight="0" marginwidth="0" title="map" scrolling="no" src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d13042.659318897353!2d-6.1497054!3d35.1899055!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0xd0bc92a648f302f%3A0x1a67e4752ee08f7d!2sLocadev%20Rent%20Car!5e0!3m2!1sen!2sma!4v1693313172521!5m2!1sen!2sma"></iframe>
@@ -130,36 +92,29 @@
     <div class="container px-5 py-24 mx-auto flex">
       <div class="lg:w-1/3 md:w-1/2 bg-gradprime rounded-lg p-8 flex flex-col md:ml-auto w-full mt-10 md:mt-0 relative z-10 shadow-md">
         <h2 class="text-3xl font-semibold mb-4 text-accent">Contact Us</h2>
-        <form class="w-full max-w-lg">
-          <div class="flex flex-wrap -mx-3 mb-4">
-            <div class="w-full md:w-1/2 px-3 mb-6 md:mb-0">
-              <label class="block uppercase tracking-wide text-accent text-xs font-bold mb-2" for="name">
-                Name
-              </label>
-              <input class="appearance-none block w-full bg-gray-100 text-gray-700 border rounded py-3 px-4 mb-3 leading-tight focus:outline-none focus:bg-white" id="name" type="text" placeholder="votre nom">
-            </div>
-            <div class="w-full md:w-1/2 px-3">
-              <div class="flex items-center">
-                <span id="emailToggle" class="block uppercase tracking-wide text-accent text-xs font-bold mb-2 cursor-pointer mr-2">Email</span>
-                <span id="phoneToggle" class="block uppercase tracking-wide inactive text-xs font-bold mb-2 cursor-pointer mr-2">Phone Number</span>
-                <!-- <div id="glowingText" class="text-4xl font-bold text-blue-500 transition-all duration-1000 ease-in-out">
-                  Click Me
-                </div> -->
-              </div>
-            
-              <input type="text" id="contactField" placeholder="entrez votre email" class="appearance-none block w-full bg-gray-100 text-gray-700 border rounded py-3 px-4 leading-tight focus:outline-none focus:bg-white focus:border-gray-500">
-            </div>
-          </div>
-          <div class="w-full mb-4">
-            <label class="block uppercase tracking-wide text-accent text-xs font-bold mb-2" for="message">
-              Message
-            </label>
-            <textarea class="appearance-none block w-full bg-gray-100 text-gray-700 border rounded py-3 px-4 mb-3 leading-tight focus:outline-none focus:bg-white focus:border-gray-500" id="message" rows="6" placeholder="Your message here"></textarea>
-          </div>
-          <button class="bg-neutral-800 hover:bg-yellow-600 hover:text-neutral-800 text-accent font-bold py-2 px-4 rounded focus:outline-none focus:shadow-outline" type="button">
-            Send
-          </button>
-        </form>
+        <div class="w-36 flex justify-center gap-2">
+          <svg class="text-white" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" version="1.1" viewBox="0 0 256 256" xml:space="preserve">
+            <defs></defs>
+            <g style="stroke: none; stroke-width: 0; stroke-dasharray: none; stroke-linecap: butt; stroke-linejoin: miter; stroke-miterlimit: 10; fill: currentColor; fill-rule: nonzero; opacity: 1;" transform="translate(1.4065934065934016 1.4065934065934016) scale(2.81 2.81)">
+              <path d="M 45 0 C 20.147 0 0 20.147 0 45 c 0 24.853 20.147 45 45 45 s 45 -20.147 45 -45 C 90 20.147 69.853 0 45 0 z M 45.454 68.712 c -4.304 0 -8.347 -1.1 -11.865 -3.031 L 20 70 l 4.431 -13.068 c -2.235 -3.67 -3.522 -7.974 -3.522 -12.576 C 20.908 30.904 31.898 20 45.454 20 C 59.013 20 70 30.904 70 44.356 S 59.012 68.712 45.454 68.712 z" style="stroke: none; stroke-width: 1; stroke-dasharray: none; stroke-linecap: butt; stroke-linejoin: miter; stroke-miterlimit: 10; fill-rule: nonzero; opacity: 1;"transform="matrix(1 0 0 1 0 0)" stroke-linecap="round"/>
+              <path d="M 45.454 23.879 c -11.38 0 -20.637 9.186 -20.637 20.477 c 0 4.481 1.461 8.63 3.931 12.006 l -2.578 7.605 l 7.931 -2.521 c 3.258 2.139 7.162 3.387 11.354 3.387 c 11.378 0 20.637 -9.185 20.637 -20.476 C 66.092 33.066 56.834 23.879 45.454 23.879 z M 57.499 52.805 c -0.503 1.393 -2.96 2.738 -4.062 2.837 c -1.103 0.1 -1.103 0.897 -7.221 -1.492 c -6.117 -2.391 -9.977 -8.615 -10.278 -9.013 c -0.302 -0.398 -2.457 -3.236 -2.457 -6.174 c 0 -2.937 1.554 -4.382 2.105 -4.979 c 0.552 -0.597 1.204 -0.747 1.605 -0.747 s 0.803 0.05 1.153 0.05 c 0.352 0 0.852 -0.199 1.353 0.996 c 0.501 1.196 1.706 4.133 1.856 4.432 c 0.151 0.299 0.252 0.648 0.05 1.046 c -0.199 0.399 -0.299 0.647 -0.601 0.996 c -0.301 0.348 -0.632 0.778 -0.903 1.046 c -0.301 0.297 -0.614 0.62 -0.264 1.217 c 0.351 0.598 1.559 2.552 3.347 4.134 c 2.298 2.033 4.237 2.664 4.838 2.963 c 0.602 0.299 0.953 0.249 1.304 -0.151 c 0.352 -0.398 1.505 -1.742 1.906 -2.34 c 0.401 -0.597 0.803 -0.497 1.354 -0.298 c 0.55 0.198 3.509 1.643 4.111 1.942 c 0.601 0.298 1.002 0.448 1.153 0.697 C 57.999 50.214 57.999 51.409 57.499 52.805 z" style="stroke: none; stroke-width: 1; stroke-dasharray: none; stroke-linecap: butt; stroke-linejoin: miter; stroke-miterlimit: 10; fill-rule: nonzero; opacity: 1;" transform="matrix(1 0 0 1 0 0)" stroke-linecap="round"/>
+            </g>
+          </svg>
+          
+          <svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" version="1.1" viewBox="0 0 256 256" xml:space="preserve" class="text-white">
+
+            <defs>
+            </defs>
+            <g style="stroke: none; stroke-width: 0; stroke-dasharray: none; stroke-linecap: butt; stroke-linejoin: miter; stroke-miterlimit: 10; fill: currentColor; fill-rule: nonzero; opacity: 1;" transform="translate(1.4065934065934016 1.4065934065934016) scale(2.81 2.81)" >
+              <path d="M 46.003 52.103 c -0.285 0.257 -0.644 0.385 -1.003 0.385 s -0.718 -0.128 -1.003 -0.385 l -5.155 -4.637 L 23.741 60.208 h 42.517 l -15.1 -12.743 L 46.003 52.103 z" style="stroke: none; stroke-width: 1; stroke-dasharray: none; stroke-linecap: butt; stroke-linejoin: miter; stroke-miterlimit: 10; fill-rule: nonzero; opacity: 1;" transform=" matrix(1 0 0 1 0 0) " stroke-linecap="round" />
+              <polygon points="66.32,29.79 23.68,29.79 45,48.97 " style="stroke: none; stroke-width: 1; stroke-dasharray: none; stroke-linecap: butt; stroke-linejoin: miter; stroke-miterlimit: 10; fill-rule: nonzero; opacity: 1;" transform="  matrix(1 0 0 1 0 0) "/>
+              <polygon points="21.07,31.48 21.07,58.53 36.59,45.44 " style="stroke: none; stroke-width: 1; stroke-dasharray: none; stroke-linecap: butt; stroke-linejoin: miter; stroke-miterlimit: 10; fill-rule: nonzero; opacity: 1;" transform="  matrix(1 0 0 1 0 0) "/>
+              <polygon points="68.93,58.53 68.93,31.48 53.41,45.44 " style="stroke: none; stroke-width: 1; stroke-dasharray: none; stroke-linecap: butt; stroke-linejoin: miter; stroke-miterlimit: 10; fill-rule: nonzero; opacity: 1;" transform="  matrix(1 0 0 1 0 0) "/>
+              <path d="M 45 0 C 20.147 0 0 20.147 0 45 c 0 24.853 20.147 45 45 45 s 45 -20.147 45 -45 C 90 20.147 69.853 0 45 0 z M 71.927 58.911 c 0 2.369 -1.928 4.297 -4.297 4.297 H 22.37 c -2.369 0 -4.296 -1.928 -4.296 -4.297 V 31.088 c 0 -2.369 1.927 -4.296 4.296 -4.296 h 45.26 c 2.369 0 4.297 1.927 4.297 4.296 V 58.911 z" style="stroke: none; stroke-width: 1; stroke-dasharray: none; stroke-linecap: butt; stroke-linejoin: miter; stroke-miterlimit: 10; fill-rule: nonzero; opacity: 1;" transform=" matrix(1 0 0 1 0 0) " stroke-linecap="round" />
+            </g>
+          </svg>
+        </div>
+
       </div>
     </div>
   </section>

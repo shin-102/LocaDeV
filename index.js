@@ -58,7 +58,6 @@ document.addEventListener("DOMContentLoaded", function() {
   "./img/LDV DACIA LOGAN.png",
   "./img/LDV DACIA STEPWAY.png",
   "./img/LDV FIAT TIPO.png",
-  "./img/LDV PGT 308GT.png",
   "./img/LDV RENAULT CLIO.png", 
   
   ]; // Add your image URLs

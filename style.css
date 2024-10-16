@@ -1,58 +1,25 @@
 /* styles.css */
 /* Define your color palette */
 :root {
-  --primary: #444444;
-  --secondary: #FFD700;
-  --compliment: #555555 ;
-  --accent: #CDAE50;
+  --primary : #FFCC00 ;
+  --secondary : #FFDA47 ;
+  --accent : #FFE270 ;
+  --dark : #141414 ;
+}
+.bg-primary { background-color: var(--primary);}
+.bg-secondary { background-color: var(--secondary);}
+.bg-accent { background-color: var(--accent);}
+.bg-dark { background-color: var(--dark);}
+.text-primary { color: var(--primary);}
+.text-secondary { color: var(--secondary);}
+.text-accent { color: var(--accent);}
+
+#locadev-map {
+  filter: grayscale(100%) invert(100%)
 }
 
-/* Apply the color palette to the navigation bars */
-.bg-primary {
-  background-color: var(--primary);
+.slider img {
+  width: 100%;
+  border-radius: 10px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
 }
-
-.bg-secondary {
-  background-color: var(--secondary);
-}
-
-.text-compliment {
-  color: var(--compliment);
-}
-
-.text-accent {
-  color: var(--accent);
-}
-
-.bg-gradprime {
-  background: linear-gradient(270deg, rgba(153,153,153,1) 0%, rgba(68,68,68,1) 100%);
-}
-
-.bg-gradsecond {
-  background: linear-gradient(90deg, rgba(255,215,0,1) 0%, rgba(205,174,80,1) 100%);
-}
-.active {
-  color: var(--accent); 
-}
-
-.inactive {
-  color: #111827; 
-  text-shadow: 0 0 10px rgba(253, 228, 2, 0.8);
-  animation: glow 0.8s infinite alternate;
-  transition: text-shadow 0.5s;
-}
-@keyframes glow {
-  0% {
-    text-shadow: 0 0 10px rgba(253, 228, 2, 0.8);
-  }
-  100% {
-    text-shadow: 0 0 10px rgba(0, 0, 255, 0);
-  }
-}
-
-.carbgimg {
-  background-image: url('./img/LDV\ wallpaper.jpg');
-  background-position: center;
-  background-size: cover;
-}
-

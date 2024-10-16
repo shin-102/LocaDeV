@@ -7,148 +7,300 @@
   <link href="./style.css" rel="stylesheet">
   <script src="https://cdn.tailwindcss.com"></script>
 </head>
-<body>
-  <header class="relative z-[2] bg-neutral-950 p-4 text-white ">
-    <span class="container mx-auto flex justify-center">
-      <h2 class="text-2xl font-semibold">Locadev</h2>
-    </span>
+
+<body class="bg-dark relative">
+  
+  <header class="fixed w-xl flex justify-center z-[1000] top-4 left-4">
+    <div class="flex flex-col justify-center bg-dark rounded-xl items-center">
+      <div class="">
+        <img src="./img/LDV-removebg.png" alt="Logo" class="h-20">
+      </div>
+      <a href="http://wa.me/212668156968" title="Whatsapp" class="py-4">
+        <svg class="flex-shrink-0 text-accent hover:text-yellow-700 transition ease-in-out w-14 h-14" xmlns="http://www.w3.org/2000/svg"
+          xmlns:xlink="http://www.w3.org/1999/xlink" version="1.1" viewBox="0 0 256 256" xml:space="preserve">
+          <defs></defs>
+          <g style="stroke: none; stroke-width: 0; stroke-dasharray: none; stroke-linecap: butt; stroke-linejoin: miter; stroke-miterlimit: 10; fill: currentColor; fill-rule: nonzero; opacity: 1;"
+            transform="translate(1.4065934065934016 1.4065934065934016) scale(2.81 2.81)">
+            <path
+              d="M 45 0 C 20.147 0 0 20.147 0 45 c 0 24.853 20.147 45 45 45 s 45 -20.147 45 -45 C 90 20.147 69.853 0 45 0 z M 45.454 68.712 c -4.304 0 -8.347 -1.1 -11.865 -3.031 L 20 70 l 4.431 -13.068 c -2.235 -3.67 -3.522 -7.974 -3.522 -12.576 C 20.908 30.904 31.898 20 45.454 20 C 59.013 20 70 30.904 70 44.356 S 59.012 68.712 45.454 68.712 z"
+              style="stroke: none; stroke-width: 1; stroke-dasharray: none; stroke-linecap: butt; stroke-linejoin: miter; stroke-miterlimit: 10; fill-rule: nonzero; opacity: 1;"
+              transform="matrix(1 0 0 1 0 0)" stroke-linecap="round" />
+            <path
+              d="M 45.454 23.879 c -11.38 0 -20.637 9.186 -20.637 20.477 c 0 4.481 1.461 8.63 3.931 12.006 l -2.578 7.605 l 7.931 -2.521 c 3.258 2.139 7.162 3.387 11.354 3.387 c 11.378 0 20.637 -9.185 20.637 -20.476 C 66.092 33.066 56.834 23.879 45.454 23.879 z M 57.499 52.805 c -0.503 1.393 -2.96 2.738 -4.062 2.837 c -1.103 0.1 -1.103 0.897 -7.221 -1.492 c -6.117 -2.391 -9.977 -8.615 -10.278 -9.013 c -0.302 -0.398 -2.457 -3.236 -2.457 -6.174 c 0 -2.937 1.554 -4.382 2.105 -4.979 c 0.552 -0.597 1.204 -0.747 1.605 -0.747 s 0.803 0.05 1.153 0.05 c 0.352 0 0.852 -0.199 1.353 0.996 c 0.501 1.196 1.706 4.133 1.856 4.432 c 0.151 0.299 0.252 0.648 0.05 1.046 c -0.199 0.399 -0.299 0.647 -0.601 0.996 c -0.301 0.348 -0.632 0.778 -0.903 1.046 c -0.301 0.297 -0.614 0.62 -0.264 1.217 c 0.351 0.598 1.559 2.552 3.347 4.134 c 2.298 2.033 4.237 2.664 4.838 2.963 c 0.602 0.299 0.953 0.249 1.304 -0.151 c 0.352 -0.398 1.505 -1.742 1.906 -2.34 c 0.401 -0.597 0.803 -0.497 1.354 -0.298 c 0.55 0.198 3.509 1.643 4.111 1.942 c 0.601 0.298 1.002 0.448 1.153 0.697 C 57.999 50.214 57.999 51.409 57.499 52.805 z"
+              style="stroke: none; stroke-width: 1; stroke-dasharray: none; stroke-linecap: butt; stroke-linejoin: miter; stroke-miterlimit: 10; fill-rule: nonzero; opacity: 1;"
+              transform="matrix(1 0 0 1 0 0)" stroke-linecap="round" />
+          </g>
+        </svg>
+      </a>
+    </div>
   </header>
 
-  <nav id="navigator" class="relative z-[1] bg-gradsecond p-2">
-    <div class="container mx-auto flex justify-center text-xl font-semibold gap-12 py-2 text-gray-800">
-      <a href="#home" class="hover:text-white">Home</a>
-      <a href="#about" class="hover:text-white">About</a>
-      <a href="#cars" class="hover:text-white">Cars</a>
-      <a href="#contact" class="hover:text-white">Contact</a>
+  <section class="relative lg:min-h-[1000px] mt-40 pt-24 pb-10 sm:pt-32 sm:pb-16 lg:pb-24">
+    <div class="absolute inset-x-0 bottom-0 z-10 hidden lg:flex">
+      <img class="hidden w-full lg:block brightness-50"
+        src="./img/LDV-bg.jpg" alt="" />
+      <img class="block w-full lg:hidden"
+        src="https://cdn.rareblocks.xyz/collection/celebration/images/hero/5/credit-cards-mobile.png" alt="" />
     </div>
-  </nav>
 
-  <!--* HOME SECTION *-->
+    <div class="px-4 mx-auto max-w-7xl sm:px-6 lg:px-8 relative z-20">
+      <div class="max-w-xl mx-auto text-center">
+        <h1 class="text-4xl font-bold sm:text-6xl">
+          <span class="text-transparent bg-clip-text bg-gradient-to-r from-yellow-300 to-white"> Simplified credit cards
+            for students </span>
+        </h1>
+        <p class="mt-5 text-base text-white sm:text-xl">No more hassle taking loans and making payments. Try Postcrats
+          credit card, make your life simple.</p>
 
-  <section id="home" class="h-screen flex flex-col items-center justify-center carbgimg relative">
-    <img src="./img/LDV-removebg.png" alt="Locadev" class="w-52">
-    <h1 class="text-5xl text-accent font-semibold">Welcome to our Car Rental Service</h1>
-    <div class="absolute left-4 w-24">
-      <!--Whatsapp logo-->
-      <a href="http://wa.me/212668156968" class="w-24" title="Whatsapp">
-        <svg class="text-white" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" version="1.1" viewBox="0 0 256 256" xml:space="preserve">
-          <defs></defs>
-          <g style="stroke: none; stroke-width: 0; stroke-dasharray: none; stroke-linecap: butt; stroke-linejoin: miter; stroke-miterlimit: 10; fill: currentColor; fill-rule: nonzero; opacity: 1;" transform="translate(1.4065934065934016 1.4065934065934016) scale(2.81 2.81)">
-            <path d="M 45 0 C 20.147 0 0 20.147 0 45 c 0 24.853 20.147 45 45 45 s 45 -20.147 45 -45 C 90 20.147 69.853 0 45 0 z M 45.454 68.712 c -4.304 0 -8.347 -1.1 -11.865 -3.031 L 20 70 l 4.431 -13.068 c -2.235 -3.67 -3.522 -7.974 -3.522 -12.576 C 20.908 30.904 31.898 20 45.454 20 C 59.013 20 70 30.904 70 44.356 S 59.012 68.712 45.454 68.712 z" style="stroke: none; stroke-width: 1; stroke-dasharray: none; stroke-linecap: butt; stroke-linejoin: miter; stroke-miterlimit: 10; fill-rule: nonzero; opacity: 1;"transform="matrix(1 0 0 1 0 0)" stroke-linecap="round"/>
-            <path d="M 45.454 23.879 c -11.38 0 -20.637 9.186 -20.637 20.477 c 0 4.481 1.461 8.63 3.931 12.006 l -2.578 7.605 l 7.931 -2.521 c 3.258 2.139 7.162 3.387 11.354 3.387 c 11.378 0 20.637 -9.185 20.637 -20.476 C 66.092 33.066 56.834 23.879 45.454 23.879 z M 57.499 52.805 c -0.503 1.393 -2.96 2.738 -4.062 2.837 c -1.103 0.1 -1.103 0.897 -7.221 -1.492 c -6.117 -2.391 -9.977 -8.615 -10.278 -9.013 c -0.302 -0.398 -2.457 -3.236 -2.457 -6.174 c 0 -2.937 1.554 -4.382 2.105 -4.979 c 0.552 -0.597 1.204 -0.747 1.605 -0.747 s 0.803 0.05 1.153 0.05 c 0.352 0 0.852 -0.199 1.353 0.996 c 0.501 1.196 1.706 4.133 1.856 4.432 c 0.151 0.299 0.252 0.648 0.05 1.046 c -0.199 0.399 -0.299 0.647 -0.601 0.996 c -0.301 0.348 -0.632 0.778 -0.903 1.046 c -0.301 0.297 -0.614 0.62 -0.264 1.217 c 0.351 0.598 1.559 2.552 3.347 4.134 c 2.298 2.033 4.237 2.664 4.838 2.963 c 0.602 0.299 0.953 0.249 1.304 -0.151 c 0.352 -0.398 1.505 -1.742 1.906 -2.34 c 0.401 -0.597 0.803 -0.497 1.354 -0.298 c 0.55 0.198 3.509 1.643 4.111 1.942 c 0.601 0.298 1.002 0.448 1.153 0.697 C 57.999 50.214 57.999 51.409 57.499 52.805 z" style="stroke: none; stroke-width: 1; stroke-dasharray: none; stroke-linecap: butt; stroke-linejoin: miter; stroke-miterlimit: 10; fill-rule: nonzero; opacity: 1;" transform="matrix(1 0 0 1 0 0)" stroke-linecap="round"/>
-          </g>
-        </svg>         
+        <a href="#" title=""
+          class="inline-flex items-center px-6 py-4 mt-8 font-semibold text-white transition-all duration-200 bg-secondary rounded-lg sm:mt-16 hover:bg-yellow-600 focus:bg-yellow-600"
+          role="button">
+          Apply for free
+          <svg class="w-6 h-6 ml-8 -mr-2" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24"
+            stroke="currentColor">
+            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="1.5"
+              d="M13 9l3 3m0 0l-3 3m3-3H8m13 0a9 9 0 11-18 0 9 9 0 0118 0z" />
+          </svg>
+        </a>
+
+        <div class="grid grid-cols-1 px-20 mt-12 text-left gap-x-12 gap-y-8 sm:grid-cols-3 sm:px-0">
+          <div class="flex items-center">
+            <svg class="flex-shrink-0" width="31" height="25" viewBox="0 0 31 25" fill="none"
+              xmlns="http://www.w3.org/2000/svg">
+              <path
+                d="M25.1667 14.187H20.3333C17.6637 14.187 15.5 16.3507 15.5 19.0203V19.8258C15.5 19.8258 18.0174 20.6314 22.75 20.6314C27.4826 20.6314 30 19.8258 30 19.8258V19.0203C30 16.3507 27.8363 14.187 25.1667 14.187Z"
+                stroke="#28CC9D" stroke-width="1.5" stroke-miterlimit="10" stroke-linecap="round"
+                stroke-linejoin="round" />
+              <path
+                d="M18.7227 6.9369C18.7227 4.71276 20.5263 2.90912 22.7504 2.90912C24.9746 2.90912 26.7782 4.71276 26.7782 6.9369C26.7782 9.16104 24.9746 11.7702 22.7504 11.7702C20.5263 11.7702 18.7227 9.16104 18.7227 6.9369Z"
+                stroke="#28CC9D" stroke-width="1.5" stroke-miterlimit="10" stroke-linecap="round"
+                stroke-linejoin="round" />
+              <path
+                d="M13.2231 15.8512H7.11157C3.73595 15.8512 1 18.5871 1 21.9628V22.9814C1 22.9814 4.18311 24 10.1674 24C16.1516 24 19.3347 22.9814 19.3347 22.9814V21.9628C19.3347 18.5871 16.5988 15.8512 13.2231 15.8512Z"
+                fill="#0B1715" stroke="white" stroke-width="1.5" stroke-miterlimit="10" stroke-linecap="round"
+                stroke-linejoin="round" />
+              <path
+                d="M5.07422 6.68386C5.07422 3.87152 7.35485 1.59088 10.1672 1.59088C12.9795 1.59088 15.2602 3.87152 15.2602 6.68386C15.2602 9.4962 12.9795 12.7954 10.1672 12.7954C7.35485 12.7954 5.07422 9.4962 5.07422 6.68386Z"
+                fill="#0B1715" stroke="white" stroke-width="1.5" stroke-miterlimit="10" stroke-linecap="round"
+                stroke-linejoin="round" />
+            </svg>
+            <p class="ml-3 text-sm text-white">Over 12,000 students joined</p>
+          </div>
+
+          <div class="flex items-center">
+            <svg class="flex-shrink-0" width="23" height="23" viewBox="0 0 23 23" fill="none"
+              xmlns="http://www.w3.org/2000/svg">
+              <path
+                d="M19.8335 21.9166H3.16683C2.6143 21.9166 2.08439 21.6972 1.69369 21.3065C1.30299 20.9158 1.0835 20.3858 1.0835 19.8333V3.16665C1.0835 2.61411 1.30299 2.08421 1.69369 1.69351C2.08439 1.30281 2.6143 1.08331 3.16683 1.08331H19.8335C20.386 1.08331 20.9159 1.30281 21.3066 1.69351C21.6973 2.08421 21.9168 2.61411 21.9168 3.16665V19.8333C21.9168 20.3858 21.6973 20.9158 21.3066 21.3065C20.9159 21.6972 20.386 21.9166 19.8335 21.9166Z"
+                stroke="white" stroke-width="1.5" stroke-miterlimit="10" stroke-linecap="round"
+                stroke-linejoin="round" />
+              <path d="M7 12.6667L9.25 15L16 8" stroke="#28CC9D" stroke-width="1.5" stroke-miterlimit="10"
+                stroke-linecap="round" stroke-linejoin="round" />
+            </svg>
+            <p class="ml-3 text-sm text-white">No yearly charges, maximum limits</p>
+          </div>
+
+          <div class="flex items-center">
+            <svg class="flex-shrink-0" width="20" height="24" viewBox="0 0 20 24" fill="none"
+              xmlns="http://www.w3.org/2000/svg">
+              <path
+                d="M17 11H3C1.89543 11 1 11.8954 1 13V21C1 22.1046 1.89543 23 3 23H17C18.1046 23 19 22.1046 19 21V13C19 11.8954 18.1046 11 17 11Z"
+                stroke="white" stroke-width="1.5" stroke-miterlimit="10" stroke-linecap="round"
+                stroke-linejoin="round" />
+              <path
+                d="M10 19C11.1046 19 12 18.1046 12 17C12 15.8954 11.1046 15 10 15C8.89543 15 8 15.8954 8 17C8 18.1046 8.89543 19 10 19Z"
+                stroke="#28CC9D" stroke-width="1.5" stroke-miterlimit="10" stroke-linecap="round"
+                stroke-linejoin="round" />
+              <path
+                d="M15 7V6C15.0131 4.68724 14.5042 3.42303 13.5853 2.48539C12.6664 1.54776 11.4128 1.01346 10.1 1H10C8.68724 0.986939 7.42303 1.4958 6.48539 2.41469C5.54776 3.33357 5.01346 4.58724 5 5.9V7"
+                stroke="#28CC9D" stroke-width="1.5" stroke-miterlimit="10" stroke-linecap="round"
+                stroke-linejoin="round" />
+            </svg>
+            <p class="ml-3 text-sm text-white">Secured & safe online payment</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+<section class="py-10 sm:py-16 lg:py-24">
+  <div class="max-w-5xl px-4 mx-auto sm:px-6 lg:px-8">
+    <div class="max-w-2xl mx-auto text-center">
+      <h2 class="text-3xl font-bold leading-tight text-white sm:text-4xl lg:text-5xl">Numbers tell our story</h2>
+      <p class="mt-3 text-xl leading-relaxed text-gray-600 md:mt-8">Amet minim mollit non deserunt ullamco est sit
+        aliqua dolor do amet sint. Velit officia consequat duis.</p>
+    </div>
+
+    <div class="grid grid-cols-1 gap-8 mt-10 text-center lg:mt-24 sm:gap-x-8 md:grid-cols-3">
+      <div>
+        <h3 class="font-bold text-7xl">
+          <span class="text-transparent bg-clip-text bg-gradient-to-r from-yellow-400 to-white"> 6+ </span>
+        </h3>
+        <p class="mt-4 text-xl font-medium text-accent">Years in business</p>
+      </div>
+
+      <div>
+        <h3 class="font-bold text-7xl">
+          <span class="text-transparent bg-clip-text bg-gradient-to-r from-yellow-400 to-white"> 4821 </span>
+        </h3>
+        <p class="mt-4 text-xl font-medium text-accent">Projects delivered</p>
+      </div>
+
+      <div>
+        <h3 class="font-bold text-7xl">
+          <span class="text-transparent bg-clip-text bg-gradient-to-r from-yellow-400 to-white"> 37+ </span>
+        </h3>
+        <p class="mt-4 text-xl font-medium text-accent">Team members</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section class="py-10 sm:py-16 lg:py-24">
+  <div class="px-4 mx-auto max-w-7xl sm:px-6 lg:px-8">
+    <div class="max-w-xl mx-auto text-center">
+      <p class="text-sm font-semibold tracking-widest text-accent uppercase">130+ Handcoded Blocks</p>
+
+      <h2 class="mt-6 text-3xl font-bold leading-tight text-white sm:text-4xl lg:text-5xl">Celebration helps you build
+        beautiful website</h2>
+    </div>
+
+    <div class="grid items-center grid-cols-1 mt-12 gap-y-10 lg:grid-cols-5 sm:mt-20 gap-x-4">
+      <div class="space-y-8 lg:pr-16 xl:pr-24 lg:col-span-2 lg:space-y-12">
+        <div class="flex items-start">
+          <svg class="flex-shrink-0 text-green-500 w-9 h-9" xmlns="http://www.w3.org/2000/svg" fill="none"
+            viewBox="0 0 24 24" stroke="currentColor">
+            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="1.5"
+              d="M3 4a1 1 0 011-1h16a1 1 0 011 1v2.586a1 1 0 01-.293.707l-6.414 6.414a1 1 0 00-.293.707V17l-4 4v-6.586a1 1 0 00-.293-.707L3.293 7.293A1 1 0 013 6.586V4z" />
+          </svg>
+          <div class="ml-5">
+            <h3 class="text-xl font-semibold text-secondary">Simply Copy & Paste</h3>
+            <p class="mt-3 text-base text-gray-600">Amet minim mollit non deserunt ullamco est sit aliqua dolor do amet
+              sint.</p>
+          </div>
+        </div>
+
+        <div class="flex items-start">
+          <svg class="flex-shrink-0 text-blue-600 w-9 h-9" xmlns="http://www.w3.org/2000/svg" fill="none"
+            viewBox="0 0 24 24" stroke="currentColor">
+            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="1.5"
+              d="M8 9l3 3-3 3m5 0h3M5 20h14a2 2 0 002-2V6a2 2 0 00-2-2H5a2 2 0 00-2 2v12a2 2 0 002 2z" />
+          </svg>
+          <div class="ml-5">
+            <h3 class="text-xl font-semibold text-secondary">Easy to Customize</h3>
+            <p class="mt-3 text-base text-gray-600">Amet minim mollit non deserunt ullamco est sit aliqua dolor do amet
+              sint.</p>
+          </div>
+        </div>
+
+        <div class="flex items-start">
+          <svg class="flex-shrink-0 text-red-500 w-9 h-9" xmlns="http://www.w3.org/2000/svg" fill="none"
+            viewBox="0 0 24 24" stroke="currentColor">
+            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="1.5"
+              d="M4.318 6.318a4.5 4.5 0 000 6.364L12 20.364l7.682-7.682a4.5 4.5 0 00-6.364-6.364L12 7.636l-1.318-1.318a4.5 4.5 0 00-6.364 0z" />
+          </svg>
+          <div class="ml-5">
+            <h3 class="text-xl font-semibold text-secondary">Made with TailwindCSS</h3>
+            <p class="mt-3 text-base text-gray-600">Amet minim mollit non deserunt ullamco est sit aliqua dolor do amet
+              sint.</p>
+          </div>
+        </div>
+      </div>
+
+      <div class="lg:col-span-3 text-white relative overflow-hidden w-full">
+        <div class="flex transition transform ease-in-out duration-75 slider">
+          <img src="./img/LDV DACIA DUSTER.png" alt="" />
+        </div>
+        <div class="flex justify-evenly">
+          <button class="slider-button prev text-accent" onclick="changeSlide(-1)">Previous</button>
+          <button class="slider-button next text-accent" onclick="changeSlide(1)">Next</button>          
+        </div>
+
+      </div>
+    </div>
+  </div>
+</section>
+
+<section class="py-10 sm:py-16 lg:py-24">
+  <div class="px-4 mx-auto max-w-7xl sm:px-6 lg:px-8">
+    <div class="max-w-xl mx-auto text-center">
+      <h2 class="text-3xl font-bold leading-tight text-white sm:text-4xl lg:text-5xl">Celebration helps you build
+        beautiful website</h2>
+      <p class="mt-4 text-base leading-relaxed text-gray-100">Amet minim mollit non deserunt ullamco est sit aliqua
+        dolor do amet sint. Velit officia consequat duis enim velit mollit. Exercitation veniam consequat sunt nostrud
+        amet.</p>
+
+      <a href="#" title=""
+        class="inline-flex items-center justify-center px-6 py-4 mt-10 text-base font-semibold bg-white rounded-md">
+        <svg class="w-5 h-5 mr-2 -ml-1 text-fuchsia-600" xmlns="http://www.w3.org/2000/svg" fill="none"
+          viewBox="0 0 24 24" stroke="currentColor">
+          <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M13 10V3L4 14h7v7l9-11h-7z" />
+        </svg>
+        <span class="text-transparent bg-clip-text bg-gradient-to-r from-fuchsia-600 to-blue-600"> Explore Celebration
+        </span>
       </a>
- 
     </div>
-  </section>
-  
-  <!--* ABOUT SECTION *-->
 
-  <section id="about" class="hidden bg-neutral-900 h-screen flex items-center justify-center">
-    <div class="bg-gradprime p-8 mx-8 rounded-lg w-screen">
-      <h2 class="text-3xl font-semibold mb-4 text-accent">About Us</h2>
-      <div class="flex">
-        <div class="w-1/4 pr-8">
-          <ul class="flex flex-col space-y-4">
-            <li><button data-target="mission" class="tab-button bg-secondary mx-2 py-2 px-4 rounded-lg ">Mission</button></li>
-            <li><button data-target="vision" class="tab-button bg-secondary mx-2 py-2 px-4 rounded-lg ">Vision</button></li>
-          </ul>
-        </div>
-        <div class="bg-gray-200 w-3/4 p-8 rounded-lg ">
-          <p id="mission" class="text-gray-700 max-w-md">
-            La mission de LocaDev est de fournir des services de location de voitures pratiques et fiables qui répondent aux divers besoins
-            de nos clients. Nous nous efforçons d'assurer une expérience fluide, de la réservation au retour, tout en maintenant une
-            flotte de véhicules bien entretenus et sûrs. Notre engagement est de fournir un service client exceptionnel et
-            d'améliorer la mobilité de chacun, que ce soit pour les loisirs ou les affaires.
-          </p>
-          <ul id="vision" class="text-gray-700 hidden max-w-md list-disc">
-            <li>Centré sur le client: Nous accordons la priorité aux besoins de nos clients et travaillons sans relâche pour dépasser leurs attentes.</li>
-            <li>Intégrité: Nous opérons avec transparence et honnêteté, garantissant des prix équitables et une communication claire.</li>
-            <li>Qualité: Nous maintenons un niveau élevé de qualité pour notre flotte et nos services, garantissant ainsi la sécurité et le confort de nos clients.</li>
-            <li>Durabilité: Nous nous engageons à minimiser notre impact environnemental en intégrant des pratiques et des véhicules respectueux de l'environnement.</li>
-            <li>Innovation: Nous adoptons la technologie et l'innovation pour améliorer nos services et offrir une expérience de location moderne.</li>
-          </ul>
-        </div>
-      </div>
+    <iframe class="w-full h-80 mt-8 rounded-lg shadow-xl sm:mt-20" id="locadev-map"
+    src="https://www.google.com/maps/place/Locadev+Rent+Car+:+Location+voitures+larache+(alquiler+coches+larache)/@35.1898671,-6.1492159,19z/data=!4m6!3m5!1s0xd0bc92a648f302f:0x1a67e4752ee08f7d!8m2!3d35.1899055!4d-6.1497054!16s%2Fg%2F11b77wdnsd?entry=ttu&g_ep=EgoyMDI0MTAxNC4wIKXMDSoASAFQAw%3D%3D" title="map"></iframe>
+
+    <div
+      class="flex flex-col items-start justify-center max-w-lg px-10 mx-auto mt-8 space-y-8 lg:max-w-xl sm:px-0 sm:space-y-0 sm:flex-row sm:mt-16 sm:space-x-6 lg:space-x-12 sm:items-center">
       
-    </div>
-  </section>
-  
-  <!--* CARS SECTION *-->
-
-  <section id="cars" class="hidden bg-neutral-900 h-screen flex items-center justify-center">
-      <div class="relative w-screen bg-gradprime py-8 rounded-lg">
-        <div class="flex justify-center">
-          <img id="carImage" src="./img/LDV DACIA DUSTER.png" alt="Car" class="w-4/5 rounded-lg">
-        </div>
-        <button id="prevBtn" class="absolute top-1/2 left-4 transform -translate-y-1/2 text-white bg-gray-800 p-2 rounded-full focus:outline-none hover:bg-gray-600" title="left">
-          <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor" class="h-6 w-6">
-            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M15 19l-7-7 7-7" />
+      <a href="http://wa.me/212668156968" title="Whatsapp" class="flex items-center flex-1">
+        <svg class="flex-shrink-0 text-white/50 w-14 h-14" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink"
+            version="1.1" viewBox="0 0 256 256" xml:space="preserve">
+            <defs></defs>
+            <g style="stroke: none; stroke-width: 0; stroke-dasharray: none; stroke-linecap: butt; stroke-linejoin: miter; stroke-miterlimit: 10; fill: currentColor; fill-rule: nonzero; opacity: 1;"
+              transform="translate(1.4065934065934016 1.4065934065934016) scale(2.81 2.81)">
+              <path
+                d="M 45 0 C 20.147 0 0 20.147 0 45 c 0 24.853 20.147 45 45 45 s 45 -20.147 45 -45 C 90 20.147 69.853 0 45 0 z M 45.454 68.712 c -4.304 0 -8.347 -1.1 -11.865 -3.031 L 20 70 l 4.431 -13.068 c -2.235 -3.67 -3.522 -7.974 -3.522 -12.576 C 20.908 30.904 31.898 20 45.454 20 C 59.013 20 70 30.904 70 44.356 S 59.012 68.712 45.454 68.712 z"
+                style="stroke: none; stroke-width: 1; stroke-dasharray: none; stroke-linecap: butt; stroke-linejoin: miter; stroke-miterlimit: 10; fill-rule: nonzero; opacity: 1;"
+                transform="matrix(1 0 0 1 0 0)" stroke-linecap="round" />
+              <path
+                d="M 45.454 23.879 c -11.38 0 -20.637 9.186 -20.637 20.477 c 0 4.481 1.461 8.63 3.931 12.006 l -2.578 7.605 l 7.931 -2.521 c 3.258 2.139 7.162 3.387 11.354 3.387 c 11.378 0 20.637 -9.185 20.637 -20.476 C 66.092 33.066 56.834 23.879 45.454 23.879 z M 57.499 52.805 c -0.503 1.393 -2.96 2.738 -4.062 2.837 c -1.103 0.1 -1.103 0.897 -7.221 -1.492 c -6.117 -2.391 -9.977 -8.615 -10.278 -9.013 c -0.302 -0.398 -2.457 -3.236 -2.457 -6.174 c 0 -2.937 1.554 -4.382 2.105 -4.979 c 0.552 -0.597 1.204 -0.747 1.605 -0.747 s 0.803 0.05 1.153 0.05 c 0.352 0 0.852 -0.199 1.353 0.996 c 0.501 1.196 1.706 4.133 1.856 4.432 c 0.151 0.299 0.252 0.648 0.05 1.046 c -0.199 0.399 -0.299 0.647 -0.601 0.996 c -0.301 0.348 -0.632 0.778 -0.903 1.046 c -0.301 0.297 -0.614 0.62 -0.264 1.217 c 0.351 0.598 1.559 2.552 3.347 4.134 c 2.298 2.033 4.237 2.664 4.838 2.963 c 0.602 0.299 0.953 0.249 1.304 -0.151 c 0.352 -0.398 1.505 -1.742 1.906 -2.34 c 0.401 -0.597 0.803 -0.497 1.354 -0.298 c 0.55 0.198 3.509 1.643 4.111 1.942 c 0.601 0.298 1.002 0.448 1.153 0.697 C 57.999 50.214 57.999 51.409 57.499 52.805 z"
+                style="stroke: none; stroke-width: 1; stroke-dasharray: none; stroke-linecap: butt; stroke-linejoin: miter; stroke-miterlimit: 10; fill-rule: nonzero; opacity: 1;"
+                transform="matrix(1 0 0 1 0 0)" stroke-linecap="round" />
+            </g>
           </svg>
-        </button>
-        <button id="nextBtn" class="absolute top-1/2 right-4 transform -translate-y-1/2 text-white bg-gray-800 p-2 rounded-full focus:outline-none hover:bg-gray-600" title="right">
-          <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor" class="h-6 w-6">
-            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 5l7 7-7 7" />
+        <p class="ml-4 text-lg font-semibold leading-snug text-white">Contacte sur Whatsapp</p>
+      </a>
+
+
+        <a href="mailto:locadev.rent.car@gmail.com" title="Mail" class="flex items-center flex-1">
+          <svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" version="1.1" viewBox="0 0 256 256"
+            xml:space="preserve" class="flex-shrink-0 text-white/50 w-14 h-14">
+            <defs>
+            </defs>
+            <g style="stroke: none; stroke-width: 0; stroke-dasharray: none; stroke-linecap: butt; stroke-linejoin: miter; stroke-miterlimit: 10; fill: currentColor; fill-rule: nonzero; opacity: 1;"
+              transform="translate(1.4065934065934016 1.4065934065934016) scale(2.81 2.81)">
+              <path
+                d="M 46.003 52.103 c -0.285 0.257 -0.644 0.385 -1.003 0.385 s -0.718 -0.128 -1.003 -0.385 l -5.155 -4.637 L 23.741 60.208 h 42.517 l -15.1 -12.743 L 46.003 52.103 z"
+                style="stroke: none; stroke-width: 1; stroke-dasharray: none; stroke-linecap: butt; stroke-linejoin: miter; stroke-miterlimit: 10; fill-rule: nonzero; opacity: 1;"
+                transform=" matrix(1 0 0 1 0 0) " stroke-linecap="round" />
+              <polygon points="66.32,29.79 23.68,29.79 45,48.97 "
+                style="stroke: none; stroke-width: 1; stroke-dasharray: none; stroke-linecap: butt; stroke-linejoin: miter; stroke-miterlimit: 10; fill-rule: nonzero; opacity: 1;"
+                transform="  matrix(1 0 0 1 0 0) " />
+              <polygon points="21.07,31.48 21.07,58.53 36.59,45.44 "
+                style="stroke: none; stroke-width: 1; stroke-dasharray: none; stroke-linecap: butt; stroke-linejoin: miter; stroke-miterlimit: 10; fill-rule: nonzero; opacity: 1;"
+                transform="  matrix(1 0 0 1 0 0) " />
+              <polygon points="68.93,58.53 68.93,31.48 53.41,45.44 "
+                style="stroke: none; stroke-width: 1; stroke-dasharray: none; stroke-linecap: butt; stroke-linejoin: miter; stroke-miterlimit: 10; fill-rule: nonzero; opacity: 1;"
+                transform="  matrix(1 0 0 1 0 0) " />
+              <path
+                d="M 45 0 C 20.147 0 0 20.147 0 45 c 0 24.853 20.147 45 45 45 s 45 -20.147 45 -45 C 90 20.147 69.853 0 45 0 z M 71.927 58.911 c 0 2.369 -1.928 4.297 -4.297 4.297 H 22.37 c -2.369 0 -4.296 -1.928 -4.296 -4.297 V 31.088 c 0 -2.369 1.927 -4.296 4.296 -4.296 h 45.26 c 2.369 0 4.297 1.927 4.297 4.296 V 58.911 z"
+                style="stroke: none; stroke-width: 1; stroke-dasharray: none; stroke-linecap: butt; stroke-linejoin: miter; stroke-miterlimit: 10; fill-rule: nonzero; opacity: 1;"
+                transform=" matrix(1 0 0 1 0 0) " stroke-linecap="round" />
+            </g>
           </svg>
-        </button>
-      </div>
-  </section>
-  
-  <!--* CONTACT SECTION *-->
-
-  <section id="contact" class="hidden bg-neutral-900 h-screen flex flex-col items-center">
-    <div class="absolute inset-y-14 inset-x-0 bg-gray-300" style="top: 200px">
-      <iframe width="100%" height="100%" frameborder="0" marginheight="0" marginwidth="0" title="map" scrolling="no" src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d13042.659318897353!2d-6.1497054!3d35.1899055!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0xd0bc92a648f302f%3A0x1a67e4752ee08f7d!2sLocadev%20Rent%20Car!5e0!3m2!1sen!2sma!4v1693313172521!5m2!1sen!2sma"></iframe>
+          <p class="ml-4 text-lg font-semibold leading-snug text-white">Envoie un Email</p>          
+        </a>
     </div>
-    <div class="container px-5 py-24 mx-auto flex">
-      <div class="lg:w-1/3 md:w-1/2 bg-gradprime rounded-lg p-8 flex flex-col md:ml-auto w-full mt-10 md:mt-0 relative z-10 shadow-md">
-        <h2 class="text-3xl font-semibold mb-4 text-accent">Contact Us</h2>
-        <div class="w-36 flex justify-center gap-2">
-          <a href="http://wa.me/212668156968" class="w-24" title="Whatsapp">
-            <svg class="text-white" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" version="1.1" viewBox="0 0 256 256" xml:space="preserve">
-              <defs></defs>
-              <g style="stroke: none; stroke-width: 0; stroke-dasharray: none; stroke-linecap: butt; stroke-linejoin: miter; stroke-miterlimit: 10; fill: currentColor; fill-rule: nonzero; opacity: 1;" transform="translate(1.4065934065934016 1.4065934065934016) scale(2.81 2.81)">
-                <path d="M 45 0 C 20.147 0 0 20.147 0 45 c 0 24.853 20.147 45 45 45 s 45 -20.147 45 -45 C 90 20.147 69.853 0 45 0 z M 45.454 68.712 c -4.304 0 -8.347 -1.1 -11.865 -3.031 L 20 70 l 4.431 -13.068 c -2.235 -3.67 -3.522 -7.974 -3.522 -12.576 C 20.908 30.904 31.898 20 45.454 20 C 59.013 20 70 30.904 70 44.356 S 59.012 68.712 45.454 68.712 z" style="stroke: none; stroke-width: 1; stroke-dasharray: none; stroke-linecap: butt; stroke-linejoin: miter; stroke-miterlimit: 10; fill-rule: nonzero; opacity: 1;"transform="matrix(1 0 0 1 0 0)" stroke-linecap="round"/>
-                <path d="M 45.454 23.879 c -11.38 0 -20.637 9.186 -20.637 20.477 c 0 4.481 1.461 8.63 3.931 12.006 l -2.578 7.605 l 7.931 -2.521 c 3.258 2.139 7.162 3.387 11.354 3.387 c 11.378 0 20.637 -9.185 20.637 -20.476 C 66.092 33.066 56.834 23.879 45.454 23.879 z M 57.499 52.805 c -0.503 1.393 -2.96 2.738 -4.062 2.837 c -1.103 0.1 -1.103 0.897 -7.221 -1.492 c -6.117 -2.391 -9.977 -8.615 -10.278 -9.013 c -0.302 -0.398 -2.457 -3.236 -2.457 -6.174 c 0 -2.937 1.554 -4.382 2.105 -4.979 c 0.552 -0.597 1.204 -0.747 1.605 -0.747 s 0.803 0.05 1.153 0.05 c 0.352 0 0.852 -0.199 1.353 0.996 c 0.501 1.196 1.706 4.133 1.856 4.432 c 0.151 0.299 0.252 0.648 0.05 1.046 c -0.199 0.399 -0.299 0.647 -0.601 0.996 c -0.301 0.348 -0.632 0.778 -0.903 1.046 c -0.301 0.297 -0.614 0.62 -0.264 1.217 c 0.351 0.598 1.559 2.552 3.347 4.134 c 2.298 2.033 4.237 2.664 4.838 2.963 c 0.602 0.299 0.953 0.249 1.304 -0.151 c 0.352 -0.398 1.505 -1.742 1.906 -2.34 c 0.401 -0.597 0.803 -0.497 1.354 -0.298 c 0.55 0.198 3.509 1.643 4.111 1.942 c 0.601 0.298 1.002 0.448 1.153 0.697 C 57.999 50.214 57.999 51.409 57.499 52.805 z" style="stroke: none; stroke-width: 1; stroke-dasharray: none; stroke-linecap: butt; stroke-linejoin: miter; stroke-miterlimit: 10; fill-rule: nonzero; opacity: 1;" transform="matrix(1 0 0 1 0 0)" stroke-linecap="round"/>
-              </g>
-            </svg>
-          </a>
-
-          <a href="mailto:locadev.rent.car@gmail.com" class="w-24" title="Mail">
-            <svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" version="1.1" viewBox="0 0 256 256" xml:space="preserve" class="text-white">
-              <defs>
-              </defs>
-              <g style="stroke: none; stroke-width: 0; stroke-dasharray: none; stroke-linecap: butt; stroke-linejoin: miter; stroke-miterlimit: 10; fill: currentColor; fill-rule: nonzero; opacity: 1;" transform="translate(1.4065934065934016 1.4065934065934016) scale(2.81 2.81)" >
-                <path d="M 46.003 52.103 c -0.285 0.257 -0.644 0.385 -1.003 0.385 s -0.718 -0.128 -1.003 -0.385 l -5.155 -4.637 L 23.741 60.208 h 42.517 l -15.1 -12.743 L 46.003 52.103 z" style="stroke: none; stroke-width: 1; stroke-dasharray: none; stroke-linecap: butt; stroke-linejoin: miter; stroke-miterlimit: 10; fill-rule: nonzero; opacity: 1;" transform=" matrix(1 0 0 1 0 0) " stroke-linecap="round" />
-                <polygon points="66.32,29.79 23.68,29.79 45,48.97 " style="stroke: none; stroke-width: 1; stroke-dasharray: none; stroke-linecap: butt; stroke-linejoin: miter; stroke-miterlimit: 10; fill-rule: nonzero; opacity: 1;" transform="  matrix(1 0 0 1 0 0) "/>
-                <polygon points="21.07,31.48 21.07,58.53 36.59,45.44 " style="stroke: none; stroke-width: 1; stroke-dasharray: none; stroke-linecap: butt; stroke-linejoin: miter; stroke-miterlimit: 10; fill-rule: nonzero; opacity: 1;" transform="  matrix(1 0 0 1 0 0) "/>
-                <polygon points="68.93,58.53 68.93,31.48 53.41,45.44 " style="stroke: none; stroke-width: 1; stroke-dasharray: none; stroke-linecap: butt; stroke-linejoin: miter; stroke-miterlimit: 10; fill-rule: nonzero; opacity: 1;" transform="  matrix(1 0 0 1 0 0) "/>
-                <path d="M 45 0 C 20.147 0 0 20.147 0 45 c 0 24.853 20.147 45 45 45 s 45 -20.147 45 -45 C 90 20.147 69.853 0 45 0 z M 71.927 58.911 c 0 2.369 -1.928 4.297 -4.297 4.297 H 22.37 c -2.369 0 -4.296 -1.928 -4.296 -4.297 V 31.088 c 0 -2.369 1.927 -4.296 4.296 -4.296 h 45.26 c 2.369 0 4.297 1.927 4.297 4.296 V 58.911 z" style="stroke: none; stroke-width: 1; stroke-dasharray: none; stroke-linecap: butt; stroke-linejoin: miter; stroke-miterlimit: 10; fill-rule: nonzero; opacity: 1;" transform=" matrix(1 0 0 1 0 0) " stroke-linecap="round" />
-              </g>
-            </svg>
-          </a>
-
-        </div>
-
-      </div>
-    </div>
-  </section>
-
-  <!--* FOOTER *-->
-
-  <footer class="py-2 bg-gradsecond relative z-[1]">
-    <div class="px-4 mx-auto sm:px-6 lg:px-8 max-w-7xl">
-        <div class="text-center xl:flex xl:items-center xl:justify-between xl:text-left">
-                <!-- <img class="w-auto mx-auto h-20" src="./img/LDV-removebg.png" alt="" /> -->
-                <h2 class="text-2xl font-semibold">Locadev</h2>
-
-                <p class="mt-5 text-sm text-black xl:ml-6 xl:mt-0">© Copyright 2023 Locadev</p>
-        </div>
-    </div>
-</footer>
+  </div>
+</section>
 
 
-  <script src="./index.js" defer></script>
+
+<script src="./index.js" defer></script>
 </body>
 </html>

@@ -1,104 +1,33 @@
-document.addEventListener("DOMContentLoaded", function() {
-  const navigatorLinks = document.querySelectorAll("#navigator a");
-  const sections = document.querySelectorAll("section");
+const slider = document.querySelector('.slider');
+const slides = document.querySelector('.slider img');
+let currentSlide = 0;
 
-  navigatorLinks.forEach(link => {
-    link.addEventListener("click", function(e) {
-      e.preventDefault();
-      const targetSectionId = this.getAttribute("href");
-      sections.forEach(section => {
-        section.classList.add("hidden");
-      });
-      document.querySelector(targetSectionId).classList.remove("hidden");
-    });
-  });
-});
+// Define an array with the image sources
+const imageSources = [
+    "./img/LDV DACIA DUSTER.png",
+    "./img/LDV DACIA LODGY.png",
+    "./img/LDV DACIA LOGAN.png",
+    "./img/LDV DACIA STEPWAY.png",
+    "./img/LDV FIAT TIPO.png",
+    "./img/LDV RENAULT CLIO.png",
+];
 
-//ABOUT SECTION BELOW
+function changeSlide(direction) {
+    currentSlide += direction;
+    if (currentSlide < 0) {
+        currentSlide = imageSources.length - 1;
+    }
+    if (currentSlide >= imageSources.length) {
+        currentSlide = 0;
+    }
 
-document.addEventListener("DOMContentLoaded", function() {
-  const navigatorLinks = document.querySelectorAll("#navigator a");
-  const sections = document.querySelectorAll("section");
-  const tabButtons = document.querySelectorAll(".tab-button");
+    slides.src = imageSources[currentSlide];
+}
 
-  navigatorLinks.forEach(link => {
-    link.addEventListener("click", function(e) {
-      e.preventDefault();
-      const targetSectionId = this.getAttribute("href");
-      sections.forEach(section => {
-        section.classList.add("hidden");
-      });
-      document.querySelector(targetSectionId).classList.remove("hidden");
-    });
-  });
+function autoChangeSlide() {
+    setInterval(() => {
+        changeSlide(1);
+    }, 5000);
+}
 
-  tabButtons.forEach(button => {
-    button.addEventListener("click", function() {
-      const targetTab = this.getAttribute("data-target");
-      const paragraphs = document.querySelectorAll("#about p");
-      paragraphs.forEach(paragraph => {
-        paragraph.classList.add("hidden");
-      });
-      document.getElementById(targetTab).classList.remove("hidden");
-    });
-  });
-});
-
-// CARS SECTION BELOW
-
-document.addEventListener("DOMContentLoaded", function() {
-  // ... (existing code) ...
-
-  const prevBtn = document.getElementById("prevBtn");
-  const nextBtn = document.getElementById("nextBtn");
-  const carImage = document.getElementById("carImage");
-  const images = [
-  "./img/LDV DACIA DUSTER.png",
-  "./img/LDV DACIA LODGY.png",
-  "./img/LDV DACIA LOGAN.png",
-  "./img/LDV DACIA STEPWAY.png",
-  "./img/LDV FIAT TIPO.png",
-  "./img/LDV RENAULT CLIO.png", 
-  
-  ]; // Add your image URLs
-
-  let currentImageIndex = 0;
-
-  function updateImage() {
-    carImage.src = images[currentImageIndex];
-  }
-
-  prevBtn.addEventListener("click", function() {
-    currentImageIndex = (currentImageIndex - 1 + images.length) % images.length;
-    updateImage();
-  });
-
-  nextBtn.addEventListener("click", function() {
-    currentImageIndex = (currentImageIndex + 1) % images.length;
-    updateImage();
-  });
-});
-
-//CONTACT SECTION BELOW
-
-const emailToggle = document.getElementById('emailToggle');
-const phoneToggle = document.getElementById('phoneToggle');
-const contactField = document.getElementById('contactField');
-
-emailToggle.addEventListener('click', function() {
-  emailToggle.classList.add('active');
-  emailToggle.classList.remove('inactive');
-  phoneToggle.classList.remove('active');
-  phoneToggle.classList.add('inactive');
-  contactField.placeholder = 'Enter your Email';
-  contactField.type = 'email';
-});
-
-phoneToggle.addEventListener('click', function() {
-  phoneToggle.classList.add('active');
-  phoneToggle.classList.remove('inactive');
-  emailToggle.classList.remove('active');
-  emailToggle.classList.add('inactive');
-  contactField.placeholder = 'Enter your Phone Number';
-  contactField.type = 'tel';
-});
+autoChangeSlide();

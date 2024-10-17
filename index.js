@@ -27,7 +27,7 @@ function changeSlide(direction) {
 function autoChangeSlide() {
     setInterval(() => {
         changeSlide(1);
-    }, 5000);
+    }, 2500);
 }
 
 autoChangeSlide();
